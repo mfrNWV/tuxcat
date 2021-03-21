@@ -1,0 +1,10 @@
+#This data will be available at site.data.navigation
+
+- name: home
+  link: /
+
+- name: about me
+  link: /about.html
+
+- name: contact
+  link: /contact.html
