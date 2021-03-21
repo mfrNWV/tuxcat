@@ -1,0 +1,14 @@
+---
+layout: default
+my_number: 30
+title: the tuxcat
+---
+<h1>This is the content to the blog</h1>
+<h1>{{"Hello World!" | downcase}}</h1>
+<p>
+  {% highlight c%}
+  int main(){
+    return {{ page.my_number }};
+  }
+  {% endhighlight %}
+</p>
