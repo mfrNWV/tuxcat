@@ -10,6 +10,13 @@
     --text-secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #141418;
+
+    --tcl-black: #1a1a18;
+    --tcl-grey: #cccccc;
+    --tcl-darkpink: #cc638e;
+    --tcl-lightpink: #fb7eb5;
+    --tcl-greypink: #c57f7f;
+    --tcl-red: #BF212E;
 }
 
 body {
@@ -19,12 +26,7 @@ body {
     padding: 0;
 }
 
-main {
+main, blog{
     margin-left: 5rem;
     padding: 1rem;
-}
-
-
-.current {
-    color: green;
 }

@@ -2,11 +2,9 @@
     <ul class="navbar-nav">
         
         <li class="logo">
-            <a href="#" class="nav-link">
-                <figure>
-                    <img src="/assets/images/g6470.png">
-                </figure>
-                <span class="link-text"> tuxcat </span>
+            <a href="/" class="nav-logo">
+                <img src="/assets/images/g6470.png">
+                <span class="logo-text"> tuxcat </span>
             </a>
         </li>
         
@@ -15,7 +13,7 @@
                 <a href="{{ item.link }}" class="nav-link">
                     {% if item.logo == nil %} {{ item.name }} {% endif %}
                     {{ item.logo }}
-                    <span class="link-text logo-text"> {{ item.name }} </span>
+                    <span class="link-text"> {{ item.name }} </span>
                 </a>
             </li>
         {% endfor %}
@@ -23,15 +21,6 @@
 
 </nav>
 
-
-<!-- <nav>
-    {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" 
-        {% if page.url == item.link %} class="current" {% endif %}
-        > {{ item.name }}
-        </a>
-    {% endfor %}
-</nav> -->
 
 <!-- DEATHSTAR LOGO-->
 <!-- <svg
