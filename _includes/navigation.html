@@ -11,12 +11,16 @@
         {% for item in site.data.navigation %}
             <li class="nav-item">
                 <a href="{{ item.link }}" class="nav-link">
-                    {% if item.logo == nil %} {{ item.name }} {% endif %}
-                    {{ item.logo }}
-                    <span class="link-text"> {{ item.name }} </span>
+                    {% if item.logo == nil %} 
+                        {{ item.name }} 
+                    {% else %}
+                        {{ item.logo }}
+                        <span class="link-text"> {{ item.name }} </span>
+                    {% endif %}
                 </a>
             </li>
         {% endfor %}
+
     </ul>
 
 </nav>

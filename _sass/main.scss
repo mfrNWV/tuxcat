@@ -11,19 +11,34 @@
     --bg-primary: #23232e;
     --bg-secondary: #141418;
 
+    // Tuxcat colors
     --tcl-black: #1a1a18;
     --tcl-grey: #cccccc;
     --tcl-darkpink: #cc638e;
     --tcl-lightpink: #fb7eb5;
     --tcl-greypink: #c57f7f;
     --tcl-red: #BF212E;
+
+    // background color
+    --bgc-one: #F2F2F2;
+    --bgc-two: #BFBFBF;
+    --bgc-three: #8C8C8C;
+    --bgc-four: #262626;
+    --bgc-five: #0D0D0D;
 }
 
-body {
+body {   
     color: black;
-    background-color: white;
+    background-color: whitesmoke;
     margin: 0;
     padding: 0;
+    height: 100%;
+
+    background-image: linear-gradient(120deg, rgba(245,245,245,1) 25%, var(--bgc-two) 75%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 main, blog{
