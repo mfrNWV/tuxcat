@@ -56,7 +56,7 @@
 }
 
 .fa-secondary {
-    color: rgb(206, 79, 172);
+    color: rgb(228, 108, 196);
 }
 
 .fa-primary,
@@ -108,7 +108,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    transition: background-position 1.2s ease-out;
+    transition: background-position 1.3s ease-out;
 }
 
 /* media querys*/
@@ -148,7 +148,8 @@
     }
 
     main {
-        margin: 0;
+        margin-left: 0;
+        padding: 1rem;
     }
 }
 
@@ -169,5 +170,9 @@
 
     .navbar:hover .logo-text {
         display: block;
+    }
+
+    main {
+        margin-bottom: 0;
     }
 }
