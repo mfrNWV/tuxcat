@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
@@ -8,9 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Inconsolata:wght@300&family=Major+Mono+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    {% include navigation.html %}
-    <main>
-      {{ content }}
-    </main>
+    
+    <div class="flex-wrapper">  
+      
+      <div class="div-for-navbar">
+        {% include navigation.html %}
+      </div>
+
+      <main class="div-for-main">
+        {{ content }}
+      </main>
+
+    </div>
+
   </body>
 </html>

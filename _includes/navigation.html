@@ -1,26 +1,43 @@
-<nav class="navbar">
-    <ul class="navbar-nav">
-        
-        <li class="logo">
-            <a href="/" class="nav-logo">
-                <img src="/assets/images/g6470.png">
-                <span class="logo-text"> tuxcat </span>
+
+<div class="navbar-7">
+    <div class="navbar-container">
+
+        <div class="navbar-logo">
+            <a href="/" class="navbar-logo-link">
+                <img src="/assets/images/g6470.png" class="logo">        
             </a>
-        </li>
-        
-        {% for item in site.data.navigation %}
-            <li class="nav-item">
-                <a href="{{ item.link }}" class="nav-link">
-                    {% if item.logo == nil %} 
-                        {{ item.name }} 
-                    {% else %}
-                        {{ item.logo }}
-                        <span class="link-text"> {{ item.name }} </span>
-                    {% endif %}
+        </div>
+
+        <nav>
+            <ul class="navbar-nav">
+                {% for item in site.data.navigation %}
+                    <li class="nav-item">
+                        <a href="{{ item.link }}" class="nav-link">
+                            {{ item.logo }}
+                            <span class="link-text"> {{ item.name }} </span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <div class="navbar-bottom">
+            <div class="nav-bottom-links">
+                <a href="">{{ site.data.navigation[0].logo }}</a>
+                <a href="">{{ site.data.navigation[1].logo }}</a>
+                <a href="">{{ site.data.navigation[2].logo }}</a>
+            </div>
+            <div class="nav-bottom-br">
+                <hr>
+            </div>
+            <div class="nav-bottom-credits">
+                <div class="text-bottom">
+                    &copy 2021 - tuxcat
+                </div>
+                <a href="/" class="text-bottom">
+                    Powered by Jekyll
                 </a>
-            </li>
-        {% endfor %}
-
-    </ul>
-
-</nav>
+            </div>
+        </div>
+    </div>
+</div>
