@@ -1,0 +1,19 @@
+
+
+.hero-div {
+    height: 300px;
+    width: auto;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    // Background properties
+    background-color: sandybrown;
+}
+
+.main-content-div {
+    border: 1px solid yellowgreen;
+}
