@@ -6,12 +6,68 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     // Background properties
     background-color: var(--bgc-lightgrey);
+    background-image: url(/assets/images/hero-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.hero-div-logo {
+    filter: invert(100%);
+}
+
+.hero-div-logo:hover {
+    filter: invert(0%);
+    transition: filter 1s ease-in;
+}
+
+.hero-div-logo #line1,
+.hero-div-logo #line5 {
+    transform: translateY(-100%);
+}
+
+.hero-div-logo #line2 {
+    transform: translateX(100%);
+}
+
+.hero-div-logo #line3 {
+    transform: translateY(100%);
+}
+
+.hero-div-logo #line4 {
+    transform: translateX(-100%);
+}
+
+
+.hero-div-logo:hover #line1{
+    transform: translateY(0%);
+    transition: 0.5s ease-in;
+}
+
+.hero-div-logo:hover #line2{
+    transform: translateX(0%);
+    transition: 1s ease-in 0.5s;
+}
+
+.hero-div-logo:hover #line3{
+    transform: translateY(0%);
+    transition: 0.5s ease-in 1.5s;
+}
+
+.hero-div-logo:hover #line4{
+    transform: translateX(0%);
+    transition: 1s ease-in 2s;
+}
+
+.hero-div-logo:hover #line5{
+    transform: translateY(0%);
+    transition: 0.5s ease-in 3s;
+}
+
 
 .main-content-div {
     border: 1px solid yellowgreen;
