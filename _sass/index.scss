@@ -1,5 +1,4 @@
 
-
 .hero-div {
     height: 300px;
     width: auto;
@@ -11,7 +10,7 @@
     align-items: center;
 
     // Background properties
-    background-color: sandybrown;
+    background-color: var(--bgc-lightgrey);
 }
 
 .main-content-div {

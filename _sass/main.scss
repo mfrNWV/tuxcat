@@ -16,19 +16,29 @@
     --transition-speed: 500ms;
 
     // Tuxcat colors
-    --tcl-black: #1a1a18;
-    --tcl-grey: #cccccc;
-    --tcl-darkpink: #cc638e;
-    --tcl-lightpink: #fb7eb5;
-    --tcl-greypink: #c57f7f;
-    --tcl-red: #BF212E;
-
+    --tcl-black: black;
+    --tcl-blackish: #1A1A18;
+    --tcl-grey: #CCCCCC;
+    --tcl-whiteish: #FFFCFC;
+    --tcl-white: white;
+    --tcl-yellow: #FADC96;
+    --tcl-lightpink: #FB7EB5;
+    --tcl-darkpink: #CC639E;
+    --tcl-blue: #245778;
+    
     // background color
-    --bgc-one: #F2F2F2;
-    --bgc-two: #BFBFBF;
-    --bgc-three: #8C8C8C;
-    --bgc-four: #262626;
-    --bgc-five: #0D0D0D;
+    --bgc-lightblue: #245778;
+    --bgc-dakblue: #144566;
+    --bgc-pink: #D276AA; //buttons-hover
+    --bgc-red: #A0374A;
+    --bgc-white: whitesmoke;
+    --bgc-whiteishi: #D6D2D6; //buttons
+    --bgc-lightlightgrey: #D6D3D5;
+    --bgc-lightgrey: #8B8B8B; //hero
+    --bgc-darkgrey: #292929; //navbar
+    --bgc-black: #0A0A0A;
+
+
     
 }
 
