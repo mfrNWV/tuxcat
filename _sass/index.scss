@@ -11,13 +11,24 @@
 
     // Background properties
     background-color: var(--bgc-lightgrey);
-    background-image: url(/assets/images/hero-bg.svg);
-    background-size: cover;
+    background-image: url(/assets/images/hero-no-sat.svg);
+    background-position: right top;
     background-repeat: no-repeat;
 }
 
+.satellites-fixed {
+    position: absolute;
+    width: 339px;
+}
+
+#tuxcat-box-background {
+    fill: white;
+    opacity: 0.3;
+    filter: blur(20px);
+}
+
 .hero-div-logo {
-    filter: invert(100%);
+    width: 400px;
 }
 
 .hero-div-logo:hover {
@@ -70,5 +81,10 @@
 
 
 .main-content-div {
+    border: 1px solid red;
+}
+
+.main-content-box {
     border: 1px solid yellowgreen;
+    margin: 20px 50px;
 }

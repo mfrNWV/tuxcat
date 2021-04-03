@@ -192,6 +192,10 @@
         margin: 0 0 5rem 0;
     }
 
+    .satellites-fixed {
+        left: -150px;
+    }
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 800px) {
@@ -239,6 +243,11 @@
         margin: 0 0 5rem 0;
     }
 
+    .satellites-fixed {
+        left: 0px;
+        transition: all 0.5s;
+    }
+
 }
 
  @media only screen and (min-width: 800px) {
@@ -267,6 +276,10 @@
         width: 100%; 
         max-width: 100%;
         margin-top: 0px;
+    }
+
+    .satellites-fixed {
+        left: 210px;
     }
 
  }
