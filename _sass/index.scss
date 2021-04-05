@@ -1,3 +1,6 @@
+/************************************/
+/******          HERO           *****/
+/************************************/
 
 .hero-div {
     height: 300px;
@@ -28,63 +31,182 @@
 }
 
 .hero-div-logo {
-    width: 400px;
+    width: 350px;
+    margin: 0px;
 }
 
-.hero-div-logo:hover {
-    filter: invert(0%);
-    transition: filter 1s ease-in;
+.hero-div #tuxvec {
+    filter: opacity(0%);
+    animation: fadein 1.75s ease-in 0s forwards;
 }
 
-.hero-div-logo #line1,
-.hero-div-logo #line5 {
+@keyframes fadein{
+    0% {filter: opacity(0%);}
+    100%{filter: opacity(100%);}
+}
+
+.hero-div-logo #line1{
     transform: translateY(-100%);
+    animation: l1anim 0.25s linear 0s forwards;
 }
 
 .hero-div-logo #line2 {
     transform: translateX(100%);
+    animation: l2anim 0.5s linear 0.25s forwards;
 }
 
 .hero-div-logo #line3 {
     transform: translateY(100%);
+    animation: l3anim 0.25s linear 0.75s forwards;
 }
 
 .hero-div-logo #line4 {
     transform: translateX(-100%);
+    animation: l4anim 0.5s ease-in 1s forwards;
 }
 
-
-.hero-div-logo:hover #line1{
-    transform: translateY(0%);
-    transition: 0.5s ease-in;
+.hero-div-logo #line5 {
+    transform: translateY(-100%);
+    animation: l5anim 0.25s linear 1.5s forwards;
 }
 
-.hero-div-logo:hover #line2{
-    transform: translateX(0%);
-    transition: 1s ease-in 0.5s;
+@keyframes l1anim{
+    0% {transform: translateY(-100%);}
+    100%{transform: translateY(0%);}
+}
+@keyframes l2anim{
+    0% {transform: translateX(100%);}
+    100%{transform: translateX(0%);}
+}
+@keyframes l3anim{
+    0% {transform: translateY(100%);}
+    100%{transform: translateY(0%);}
+}
+@keyframes l4anim{
+    0% {transform: translateX(-100%);}
+    100%{transform: translateX(0%);}
+}
+@keyframes l5anim{
+    0% {transform: translateY(-100%);}
+    100%{transform: translateY(0%);}
 }
 
-.hero-div-logo:hover #line3{
-    transform: translateY(0%);
-    transition: 0.5s ease-in 1.5s;
-}
-
-.hero-div-logo:hover #line4{
-    transform: translateX(0%);
-    transition: 1s ease-in 2s;
-}
-
-.hero-div-logo:hover #line5{
-    transform: translateY(0%);
-    transition: 0.5s ease-in 3s;
-}
-
+/************************************/
+/******      MAIN CONTENT       *****/
+/************************************/
 
 .main-content-div {
-    border: 1px solid red;
+    width: 100%;
 }
 
-.main-content-box {
+.post-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.post-box {
     border: 1px solid yellowgreen;
-    margin: 20px 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+}
+
+.post-box-link {
+    background-color: transparent;
+    text-decoration: none;
+    max-width: 100%;
+    display: block;
+}
+
+.post-box-image {
+    width: 100%;
+    height: 20vh;
+    border-bottom: 1px solid yellowgreen;
+    background-color: var(--bgc-lightgrey);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.post-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: transparent;
+    overflow: visible;
+    margin: 10px;
+    float: none;
+}
+
+.post-box-content-title {
+    margin-top: -20px;
+    text-decoration: none;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.post-box-h1 {
+    font-family: 'Major Mono Display', monospace;
+    color: var(--bgc-darkgrey);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.post-box-meta {
+    display: flex;
+    margin: 0px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    flex: 1;
+    padding-left: 4px;
+    padding-top: 2px;
+}
+
+.post-box-meta-a {
+    color: var(--bgc-darkgrey);
+    text-decoration: none;
+}
+
+.post-box-meta-aut {
+    color: var(--bgc-darkgrey);
+    text-decoration: none;
+}
+
+.text-sep {
+    padding: 0px 16px;
+}
+
+.post-box-meta-cat {
+    color: var(--bgc-darkgrey);
+    text-decoration: none;
+    display: none;
+}
+
+.post-box-text{
+    background-attachment: scroll;
+}
+
+.post-box-text p{
+    background-attachment: scroll;
+    margin-top: 0px;
+}
+
+.post-box-text img {
+    display: table;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-box-more {
+    padding-top: 10px;
+    
+    text-decoration: none;
+    color: var(--bgc-darkgrey);
+    font-size: 0.8em;
 }

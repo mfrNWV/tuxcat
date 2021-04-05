@@ -196,6 +196,11 @@
         left: -150px;
     }
 
+    .main-content-div {
+        // margin: 15px 10px;
+        padding: 10px 10px 0px 10px;
+    }
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 800px) {
@@ -248,6 +253,11 @@
         transition: all 0.5s;
     }
 
+    .main-content-div {
+       // margin: 15px 20px;
+       padding: 20px 20px 0px 20px;
+    }
+
 }
 
  @media only screen and (min-width: 800px) {
@@ -280,6 +290,11 @@
 
     .satellites-fixed {
         left: 210px;
+    }
+
+    .main-content-div {
+        //margin: 10px 20px;
+        padding: 20px 20px 0px 20px;
     }
 
  }
