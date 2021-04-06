@@ -1,0 +1,51 @@
+
+.hero-div-posts {
+    height: 300px;
+    width: auto;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // Background properties
+    background-color: var(--bgc-lightgrey);
+    background-image: url(/assets/images/hero-no-sat.svg);
+    background-position: right top;
+    background-repeat: no-repeat;
+
+}
+
+.satellites-fixed-posts {
+    position: absolute;
+    transform: translateX(0%);
+    animation: sat-away 1.75s ease-in 0s forwards;
+}
+
+@keyframes sat-away {
+    from {transform: translateX(0%);}
+    to {transform: translateX(500%);}
+}
+
+@media only screen and (max-width: 600px) {
+
+    .satellites-fixed-posts {
+        left: -150px;
+    }
+
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+
+    .satellites-fixed-posts {
+        left: 0px;
+    }
+
+}
+@media only screen and (min-width: 800px) {
+
+    .satellites-fixed-posts {
+        left: 210px;
+    }
+
+}

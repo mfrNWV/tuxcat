@@ -35,6 +35,15 @@
     margin: 0px;
 }
 
+.hero-div-logo h1 {
+    border: 3px solid yellowgreen;
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+    filter: opacity(0%);
+    animation: fadein 2s ease-in 0s forwards;
+}
+
 .hero-div #tuxvec {
     filter: opacity(0%);
     animation: fadein 1.75s ease-in 0s forwards;

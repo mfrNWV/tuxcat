@@ -9,12 +9,11 @@
 }
 
 .about-text {
-    // border: 3px solid yellowgreen;
+    border-radius: 10px;
     position: static;
     padding: 0px 50px;
     margin-left: auto;
     margin-right: auto;
-    //height: 100%;
     
     display: flex;
     flex-direction: column;

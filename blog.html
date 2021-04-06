@@ -1,14 +1,54 @@
 ---
 layout: default
-title: Blog
+title: tuxcat - blog
 ---
 
-<h1>Latest Posts</h1>
-<ul>
-    {% for post in site.posts %}
-        <li>
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+<div class="hero-div-posts">
+    <div class="satellites-fixed-posts">
+      {% include hero-satellites2.svg %}
+    </div>
+    <div class="hero-div-logo-background">
+      <div class="hero-div-logo">
+        <h1>LATEST POSTS</h1>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="main-content-div">
+  
+    <div class="post-box-wrapper">
+      
+      {% for post in site.posts %}
+      <div class="post-box">
+        <a href="{{ post.url }}" class="post-box-link">
+         <div style="background-image: {{ post.bg }};" class="post-box-image"></div>
+        </a>
+        
+        <div class="post-box-content">
+  
+          <a href="{{ post.url }}" class="post-box-content-title">
+            <h1 class="post-box-h1">{{ post.title | downcase }}</h1>
+          </a>
+  
+          <div class="post-box-meta">
+            <a href="{{ post.url }}" class="post-box-meta-a">{{ post.date | date_to_string }}</a>
+            <div class="text-sep">-</div>
+            <a href="{{ post.url }}" class="post-box-meta-aut">{{ post.author }}</a>
+            <!-- <div class="text-sep">-</div> -->
+            <!-- <a href="{{ post.url }}" class="post-box-meta-cat">cat</a> -->
+          </div>
+  
+          <div class="post-box-text">
             {{ post.excerpt }}
-        </li>
-    {% endfor %}
-</ul>
+          </div>
+  
+          <a href="{{ post.url }}" class="post-box-more">
+            leia mais
+          </a>
+          
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
