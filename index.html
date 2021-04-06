@@ -6,21 +6,16 @@ title: the tuxcat
 <!-- Index content layout, which is the blog front page -->
 
 <div class="hero-div">
-  
   <div class="satellites-fixed">
     {% include hero-satellites2.svg %}
   </div>
-
   <div><p>something here</p></div>
-
   <div class="hero-div-logo-background">
     <div class="hero-div-logo">
       {% include tuxcat-box.svg %}
     </div>
   </div>
-
   <div><p>A tech blog</p></div>
-
 </div>
 
 
@@ -49,8 +44,7 @@ title: the tuxcat
         </div>
 
         <div class="post-box-text">
-          <!-- {{ post.excerpt }} -->
-          {{ post.content }}
+          {{ post.excerpt }}
         </div>
 
         <a href="{{ post.url }}" class="post-box-more">
@@ -60,6 +54,6 @@ title: the tuxcat
       </div>
     </div>
     {% endfor %}
-
+  </div>
 </div>
 

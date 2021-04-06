@@ -174,7 +174,7 @@ body::-webkit-scrollbar-thumb { background: #6649b8; }
 
 .post-box-text { background-attachment: scroll; }
 
-.post-box-text p { background-attachment: scroll; margin-top: 0px; }
+.post-box-text p { background-attachment: scroll; font-family: 'Inconsolata', monospace; margin-top: 0px; }
 
 .post-box-text img { display: table; max-width: 90%; margin-left: auto; margin-right: auto; }
 
