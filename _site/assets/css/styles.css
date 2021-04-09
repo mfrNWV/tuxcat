@@ -111,6 +111,14 @@ body::-webkit-scrollbar-thumb { background: #6649b8; }
 /************************************/
 .hero-div { height: 300px; width: auto; margin: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: var(--bgc-lightgrey); background-image: url(/assets/images/hero-no-sat.svg); background-position: right top; background-repeat: no-repeat; }
 
+.hero-div-text-1, .hero-div-text-2 { color: whitesmoke; font-family: 'Ubuntu', sans-serif; text-transform: uppercase; font-size: 0.95rem; font-weight: bolder; }
+
+.hero-div-text-1 p, .hero-div-text-2 p { margin: 0.3em 0; }
+
+.hero-div-text-1 { text-align: left; }
+
+.hero-div-text-2 { text-align: right; margin-top: -6px; }
+
 .satellites-fixed { position: absolute; width: 339px; }
 
 #tuxcat-box-background { fill: white; opacity: 0.3; filter: blur(20px); }
@@ -297,7 +305,7 @@ textarea { resize: none; box-sizing: border-box; }
 
 fieldset { border: none; }
 
-@media only screen and (max-width: 800px) { .contact-wrapper { min-height: 91vh; } .contact-box { flex-direction: column; } .contact-box-1, .contact-box-2 { width: 100%; } .contact-box-1 { flex-direction: row; justify-content: space-between; align-items: flex-start; } .contact-bottom-links { display: flex; flex-direction: column; } .contact-bottom { display: flex; } .contact-bottom p { writing-mode: vertical-lr; word-wrap: break-word; } }
+@media only screen and (max-width: 800px) { .contact-wrapper { min-height: 91vh; padding: 0 10px; } .contact-box { flex-direction: column; } .contact-box-1, .contact-box-2 { width: 100%; } .contact-box-1 { flex-direction: row; justify-content: space-between; align-items: flex-start; } .contact-bottom-links { display: flex; flex-direction: column; } .contact-bottom { display: flex; } .contact-bottom p { writing-mode: vertical-lr; word-wrap: break-word; } }
 
 @media only screen and (min-width: 800px) and (max-width: 1000px) { .contact-wrapper { min-height: 100vh; } .contact-box { flex-direction: column; } .contact-box-1, .contact-box-2 { width: 100%; } .contact-box-1 { flex-direction: row; justify-content: space-between; align-items: flex-start; } .contact-bottom-links { display: flex; flex-direction: column; } .contact-bottom { display: flex; } .contact-bottom p { writing-mode: vertical-lr; word-wrap: break-word; } }
 

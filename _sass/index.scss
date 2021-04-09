@@ -19,6 +19,28 @@
     background-repeat: no-repeat;
 }
 
+.hero-div-text-1,
+.hero-div-text-2 {
+    color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    font-weight: bolder;
+}
+
+.hero-div-text-1 p,
+.hero-div-text-2 p {
+    margin: 0.3em 0;
+}
+
+.hero-div-text-1 {
+    text-align: left;
+}
+.hero-div-text-2{
+    text-align: right;
+    margin-top: -6px;
+}
+
 .satellites-fixed {
     position: absolute;
     width: 339px;
