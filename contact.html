@@ -1,4 +1,54 @@
 ---
 layout: default
-title: the tuxcat
+title: tuxcat - contact me
 ---
+
+<div class="contact-wrapper">
+
+    <div class="contact-box">
+        <div class="contact-box-1">
+            
+            <div class="contact-h1">
+                <h1>CONTACT</h1>
+                <h1>ME</h1>
+            </div>
+
+            <div class="contact-bottom">
+
+                <p>francani.mateus@gmail.com</p>
+
+                <div class="contact-bottom-links">
+                    <a href="linkedin.com/in/mfrancani">{% include linkedin.html %}</a>
+                    <a href="">{% include github.html %}</a>
+                    <a href="">{% include instagram.html %}</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-box-2">
+            
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+                <fieldset id="fs-frm-inputs">
+                    
+                        <label for="full-name">name</label>
+                        <input type="text" name="name" id="full-name" placeholder="" required="" class="input">
+                    
+                    
+                        <label for="email-address">e-mail</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="" required="" class="input">
+                        
+                        <label for="message">message</label>
+                        <textarea rows="5" name="message" id="message" placeholder="" required="" class="input"></textarea>
+                    
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                
+                <input type="submit" value="Send" class="btn">
+                
+            </form>
+        
+        </div>
+
+    </div>
+
+</div>
